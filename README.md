@@ -8,10 +8,10 @@
 <a href="https://github.com/rashidsiregar28/chika-bot"><img title="Author" src="https://img.shields.io/badge/Author-rashidsiregar28-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
-<a href="https://github.com/rashidsiregar28/followers"><img title="Followers" src="https://img.shields.io/github/followers/rashidsiregar28?color=blue&style=flat-square"></a>
-<a href="https://github.com/rashidsiregar28/megumikato2/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/rashidsiregar28/chika-bot?color=red&style=flat-square"></a>
-<a href="https://github.com/rashidsiregar28/megumikato2/network/members"><img title="Forks" src="https://img.shields.io/github/forks/rashidsiregar28/chika-bot?color=red&style=flat-square"></a>
-<a href="https://github.com/rashidsiregar28/megumikato2/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/rashidsiregar28/chika-bot?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/rashidsiregar28/chika-bot"><img title="Followers" src="https://img.shields.io/github/followers/rashidsiregar28?color=blue&style=flat-square"></a>
+<a href="https://github.com/rashidsiregar28/chika-bot/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/rashidsiregar28/chika-bot?color=red&style=flat-square"></a>
+<a href="https://github.com/rashidsiregar28/chika-bot/network/members"><img title="Forks" src="https://img.shields.io/github/forks/rashidsiregar28/chika-bot?color=red&style=flat-square"></a>
+<a href="https://github.com/rashidsiregar28/chika-bot/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/rashidsiregar28/chika-bot?label=Watchers&color=blue&style=flat-square"></a>
 </p>
 
 <p align="center">
