@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStH_A0WKtnRtD_Bla6B71LjtP-GtYOkacYsg&usqp=CAU" alt="CHIKA BOT" width="500" height="300"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStH_A0WKtnRtD_Bla6B71LjtP-GtYOkacYsg&usqp=CAU" alt="CHIKA BOT" width="600" height="400"/>
 
 
 </p>
@@ -43,7 +43,7 @@
 
 ## Bugs and Tester
 * Jika kamu menemukan bug jangan lupa buka Issues
-* Info Lebih Lanjut, Chat [me](https://wa.me/628127668234)
+* Info Lebih Lanjut, Chat [owner-chika](https://wa.me/628127668234)
 * Kamu bisa testing fitur Chika-Bot [disini](https://wa.me/6289513435428?text=.menu)
 
 # Requirements
