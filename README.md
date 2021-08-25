@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThTzB01gWo0HqVbQQSNYC4aUgh__ARYc7e3Q&usqp=CAU" alt="CHIKA BOT" width="128" height="128"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStH_A0WKtnRtD_Bla6B71LjtP-GtYOkacYsg&usqp=CAU" alt="CHIKA BOT" width="500" height="300"/>
 
 
 </p>
@@ -35,11 +35,16 @@
 
 ---
 
-# **Chika-Bot**
+# Chika-Bot
+## Information
+> ChikaBot ialah recode base dari [Xinz-bot](https://github.com/xinz-team/xinzBot)
+>
+>
 
-> ChikaBot adalah recode script dari [Xinz-bot](https://github.com/xinz-team/xinzBot). Jika kamu menemukan bug jangan lupa buka Issues. Info Lebih Lanjut, Chat [me](https://wa.me/628127668234)
->
->
+## Bugs and Tester
+* Jika kamu menemukan bug jangan lupa buka Issues
+* Info Lebih Lanjut, Chat [me](https://wa.me/628127668234)
+* Kamu bisa testing fitur Chika-Bot [disini](https://wa.me/6289513435428?text=.menu)
 
 # Requirements
 * [Node.js](https://nodejs.org/en/)
@@ -47,7 +52,6 @@
 * [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip) (for sticker command)
 * [Libwebp](https://developers.google.com/speed/webp/download) (for sticker wm)
 * [Image Magic](https://imagemagick.org/script/download.php) ( for nulis command, Centang Kolom 1,2,3,5,6)
-* Any text editor
 
 # Instalasi
 ## For Windows
