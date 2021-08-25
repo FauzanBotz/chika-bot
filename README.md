@@ -1,5 +1,12 @@
 <p align="center">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThTzB01gWo0HqVbQQSNYC4aUgh__ARYc7e3Q&usqp=CAU" alt="CHIKA BOT" width="468" height="655"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThTzB01gWo0HqVbQQSNYC4aUgh__ARYc7e3Q&usqp=CAU" alt="CHIKA BOT" width="128" height="128"/>
+
+# **Chika-Bot**
+
+> ChikaBot adalah recode script dari xinzbot
+>
+>
+
 </p>
 <p align="center">
 <a href="#"><img title="CHIKA BOT" src="https://img.shields.io/badge/CHIKA BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
