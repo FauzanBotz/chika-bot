@@ -1,11 +1,6 @@
 <p align="center">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThTzB01gWo0HqVbQQSNYC4aUgh__ARYc7e3Q&usqp=CAU" alt="CHIKA BOT" width="128" height="128"/>
 
-# **Chika-Bot**
-
-> ChikaBot adalah recode script dari xinzbot
->
->
 
 </p>
 <p align="center">
@@ -26,13 +21,22 @@
   <a href="https://github.com/rashidsiregar28/chika-bot#instalasi">Installation</a> •
   <a href="https://github.com/rashidsiregar28/chika-bot#features">Features</a> •
   <a href="https://github.com/rashidsiregar28/chika-bot#thanks-to">Thanks to</a>
+<p align='center'>
+   <a href="https://twitter.com/rashidsiregar28"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/twitter.png?raw=true"></a>&nbsp;&nbsp;
+   <a href="https://instagram.com/rashidsiregar28"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/instagram.jpg?raw=true"></a>&nbsp;&nbsp;
+   <a href="https://www.facebook.com/rashidsiregar28"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/facebook.png?raw=true"></a>
+</P>
 </p>
 </div>
 
 
 ---
 
+# **Chika-Bot**
 
+> ChikaBot adalah recode script dari Xinz-bot
+>
+>
 
 # Requirements
 * [Node.js](https://nodejs.org/en/)
