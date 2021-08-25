@@ -40,7 +40,6 @@
     "pet-pet-gif": "^1.0.9",
     "qrcode": "^1.4.4",
     "wa-sticker-formatter": "git+https://github.com/rashidsiregar28/wa-sticker-formatter.git",
-    "youtube-stalker": "^1.0.0",
     "yt-search": "^2.8.0",
     "zahir-api": "^1.0.3"
   },
