@@ -65,7 +65,7 @@ node main
 ```bash
 termux-setup-storage
 apt update && apt upgrade
-pkg install nodejs git ffmpeg libwebp imagemagick
+pkg install nodejs git ffmpeg imagemagick
 git clone https://github.com/rashidsiregar28/chika-bot.git
 cd chika-bot
 npm install
@@ -74,7 +74,7 @@ node main
 
 ## For VPS
 ```bash
-apt install nodejs git ffmpeg libwebp imagemagick
+apt install nodejs git ffmpeg imagemagick
 git clone https://github.com/rashidsiregar28/chika-bot.git
 cd chika-bot
 npm install
@@ -102,22 +102,6 @@ Jika berhasil, akan memberikanmu pesan seperti: `SUCCESS: specified value was sa
 * Sekarang setelah Anda menginstal FFmpeg, verifikasi bahwa itu berhasil dengan menjalankan perintah ini untuk melihat versi:
 ```cmd
 > ffmpeg -version
-```
-
-
-## Installing the libwebp for Windows
-* Unduh salah satu versi libwebp yang tersedia dengan mengklik [di sini](https://developers.google.com/speed/webp/download).
-* Extract file ke `C:\` path.
-* Ganti nama folder yang telah di-extract menjadi `libwebp`.
-* Run Command Prompt as Administrator.
-* Jalankan perintah berikut::
-```cmd
-setx /m PATH "C:\libwebp\bin;%PATH%"
-```
-Jika berhasil, akan memberikanmu pesan seperti: `SUCCESS: specified value was saved`.
-* Sekarang setelah Anda menginstal libwebp, verifikasi bahwa itu berhasil dengan menjalankan perintah ini untuk melihat versi:
-```cmd
-webpmux -version
 ```
 
 ## Donate
