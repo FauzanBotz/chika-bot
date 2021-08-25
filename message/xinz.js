@@ -36,7 +36,6 @@ const mathjs = require('mathjs');
 const tts = require('node-gtts');
 const FormData = require('form-data');
 const getMime = require('file-type');
-const Zhr = require('zahir-api');
 const gis = require('g-i-s');
 const google = require('google-it');
 const WSF = require('wa-sticker-formatter')
@@ -4282,38 +4281,6 @@ _Harap tunggu sebentar, media akan segera dikirim_`
 \`\`\`▢ BusinessAccount : ${isBusinessAccount ? 'Yes' : 'No'}\`\`\`
 \`\`\`▢ Biography :\`\`\` \n${biography}`
                     xinz.sendFileFromUrl(from, profilePicHD, caption, msg)
-                    limitAdd(sender, limit)
-                })
-                .catch((err) => {
-                    xinz.sendMess(ownerNumber[0], 'IG Stalk Error : ' + err)
-                    console.log(color('[IG Stalk]', 'red'), err)
-					reply(mess.error.api)
-                })
-            }
-                break
-            case prefix+'tiktokstalk': case prefix+'ttstalk': case prefix+'pptiktok':{
-                if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
-                if (args.length < 2) return reply(`Kirim perintah *${command}* _username_`)
-                reply(mess.wait)
-                Zhr.Sosmed.TiktokStalk(args[1].replace('@', ''))
-                .then((res) => {
-                    let { user, stats } = res.Results
-                    let caption = `┏┉⌣ ┈̥-̶̯͡..̷̴✽̶┄┈┈┈┈┈┈┈┈┈┈┉┓
-┆ *TIKTOK PROFILE*
-└┈┈┈┈┈┈┈┈┈┈┈⌣ ┈̥-̶̯͡..̷̴✽̶⌣ ✽̶
-
-*Data Berhasil Didapatkan!*
-\`\`\`▢ Username : ${user.uniqueId}\`\`\`
-\`\`\`▢ NickName : ${user.nickname}\`\`\`
-\`\`\`▢ Create Time : ${moment(user.createTime).tz('Asia/Jakarta').format('HH:mm:ss DD/MM/YYYY')}\`\`\`
-\`\`\`▢ Followers : ${stats.followerCount}\`\`\`
-\`\`\`▢ Following : ${stats.followingCount}\`\`\`
-\`\`\`▢ Post Count : ${stats.videoCount}\`\`\`
-\`\`\`▢ PrivateAccount : ${user.privateAccount ? 'Yes' : 'No'}\`\`\`
-\`\`\`▢ VerifiedAccount : ${user.verified ? 'Yes' : 'No'}\`\`\`
-\`\`\`▢ Like Count : ${stats.heartCount}\`\`\`
-\`\`\`▢ Biography :\`\`\` \n${user.signature}`
-                    xinz.sendFileFromUrl(from, user.avatarLarger, caption, msg)
                     limitAdd(sender, limit)
                 })
                 .catch((err) => {
