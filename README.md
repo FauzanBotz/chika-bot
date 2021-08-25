@@ -37,9 +37,7 @@
 
 # **Chika-Bot**
 
-> ChikaBot adalah recode script dari [Xinz-bot](https://github.com/xinz-team/xinzBot)
-> Jika kamu menemukan bug jangan lupa buka Issues
-> Info Lebih Lanjut, Chat [me](https://wa.me/628127668234)
+> ChikaBot adalah recode script dari [Xinz-bot](https://github.com/xinz-team/xinzBot). Jika kamu menemukan bug jangan lupa buka Issues. Info Lebih Lanjut, Chat [me](https://wa.me/628127668234)
 >
 >
 
