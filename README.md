@@ -25,6 +25,7 @@
    <a href="https://twitter.com/rashidsiregar28"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/twitter.png?raw=true"></a>&nbsp;&nbsp;
    <a href="https://instagram.com/rashidsiregar28"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/instagram.jpg?raw=true"></a>&nbsp;&nbsp;
    <a href="https://www.facebook.com/rashidsiregar28"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/facebook.png?raw=true"></a>
+   <a href="https://wa.me/628127668234"><img height="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBc_3WgZjWOtqdKZQbdkxUl5A31GZ_YC35zQ&usqp=CAU"></a>
 </P>
 </p>
 </div>
@@ -34,7 +35,7 @@
 
 # **Chika-Bot**
 
-> ChikaBot adalah recode script dari Xinz-bot
+> ChikaBot adalah recode script dari [Xinz-bot](https://github.com/xinz-team/xinzBot)
 >
 >
 
