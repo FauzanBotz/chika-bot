@@ -19,8 +19,10 @@
 <p align="center">
   <a href="https://github.com/rashidsiregar28/chika-bot#requirements">Requirements</a> •
   <a href="https://github.com/rashidsiregar28/chika-bot#instalasi">Installation</a> •
-  <a href="https://github.com/rashidsiregar28/chika-bot#features">Features</a> •
-  <a href="https://github.com/rashidsiregar28/chika-bot#thanks-to">Thanks to</a>
+  <a href="https://github.com/rashidsiregar28/chika-bot#thanks-to">Thanks to</a> •
+  <a href="https://github.com/rashidsiregar28/chika-bot#Official-Group"> Official Group Bot</a> •
+  <a href="https://github.com/rashidsiregar28/chika-bot#donate">Donate</a>
+
 <p align='center'>
    <a href="https://twitter.com/rashidsiregar28"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/twitter.png?raw=true"></a>&nbsp;&nbsp;
    <a href="https://instagram.com/rashidsiregar28"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/instagram.jpg?raw=true"></a>&nbsp;&nbsp;
@@ -36,6 +38,8 @@
 # **Chika-Bot**
 
 > ChikaBot adalah recode script dari [Xinz-bot](https://github.com/xinz-team/xinzBot)
+> Jika kamu menemukan bug jangan lupa buka Issues
+> Info Lebih Lanjut, Chat [me](https://wa.me/628127668234)
 >
 >
 
@@ -79,8 +83,8 @@ node main
 - Change ownerNumber on [this section](https://github.com/rashidsiregar28/chika-bot/blob/4d8dc8692e97e2ca60deaa8dc77dab551abf6523/config.json#L2)
 - Change botName on [this section](https://github.com/rashidsiregar28/chika-bot/blob/4d8dc8692e97e2ca60deaa8dc77dab551abf6523/config.json#L5)
 - Change Apikey on [this section](https://github.com/rashidsiregar28/chika-bot/blob/4d8dc8692e97e2ca60deaa8dc77dab551abf6523/config.json#L7)
-- You can edit list menu and donate on [this section](https://github.com/Xinz-Team/XinzBot/blob/8d32fc24d9252517e995d19046fe06ca4b983055/message/help.js#L147)
-- You can add fiture on [this section](https://github.com/Xinz-Team/XinzBot/blob/main/message/xinz.js)
+- You can edit list and display menu or donate on [this section](https://github.com/rashidsiregar28/chika-bot/blob/main/help/ind.js)
+- You can add fiture on [this section](https://github.com/rashidsiregar28/chika-bot/blob/main/message/xinz.js)
 
 
 ## Installing the FFmpeg for Windows
@@ -117,13 +121,16 @@ webpmux -version
 ## Donate
 - [Saweria](https://saweria.co/rashidsiregar28)
 
-# Features
-- Cek [disini](https://github.com/Xinz-Team/XinzBot/blob/main/message/help.js)
+# Official Group
+- [Official Group 1](https://chat.whatsapp.com/HLU6B1Mw34QBMUoXAyhec0)
+- [Official Group 2](https://chat.whatsapp.com/IwGkynIvQAk1J6wQVDLeFC)
 
 # Thanks to
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
 * [`Xinz-Team`](https://github.com/Xinz-Team)
+* [`Aqulzz`](https://github.com/zennn08)
 * [`Nurutomo`](https://github.com/Nurutomo)
+* [`Faiz Bastomi`](https://github.com/FaizBastomi)
 * [`MhankBarBar`](https://github.com/MhankBarBar)
 * [`MRHRTZ`](https://github.com/MRHRTZ)
 * [`Mamet`](https://github.com/mamet8/)
