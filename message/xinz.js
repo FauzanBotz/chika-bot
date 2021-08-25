@@ -218,48 +218,6 @@ const getAllRespon = () => {
     })
     return array
 }
-
-const addCmd = (id, command) => {
-    const obj = { id: id, chats: command }
-    _scommand.push(obj)
-    fs.writeFileSync('./database/scommand.json', JSON.stringify(_scommand))
-}
-
-const getCommandPosition = (id) => {
-    let position = null
-    Object.keys(_scommand).forEach((i) => {
-        if (_scommand[i].id === id) {
-            position = i
-        }
-    })
-    if (position !== null) {
-        return position
-    }
-}
-
-const getCmd = (id) => {
-    let position = null
-    Object.keys(_scommand).forEach((i) => {
-        if (_scommand[i].id === id) {
-            position = i
-        }
-    })
-    if (position !== null) {
-        return _scommand[position].chats
-    }
-}
-
-
-const checkSCommand = (id) => {
-    let status = false
-    Object.keys(_scommand).forEach((i) => {
-        if (_scommand[i].id === id) {
-            status = true
-        }
-    })
-    return status
-}
-
 module.exports = async(xinz, msg, smsg, blocked, _afk, welcome) => {
     try {
         const m = smsg
@@ -490,7 +448,6 @@ module.exports = async(xinz, msg, smsg, blocked, _afk, welcome) => {
         if (isBan && isCmd && command.split(prefix)[1] !== 'unban') return textImg(ind.BlockBan(ownerNumber[0].split('@')[0], prefix))
         if (isBan) return
         if (isBlocked) return 
-        if (isCmd && isGroup && bancmd.includes(command.split(prefix)[1] + from)) return reply('Command itu di lock di group ini')
         BannedExpired(ban)
 
         // MUTE
@@ -508,7 +465,7 @@ module.exports = async(xinz, msg, smsg, blocked, _afk, welcome) => {
                 addBalance(sender, htgm, balance)
                 let list = []
                 let kuispref = [`family100`,`tebakgambar`]
-                let kuisdesk = [`Game Dimana berusaha menebak jawaban terbanyak berdasarkan survey 100 orang`,`Game kombinasi beberapa gambar yang apabila dirangkai dapat menjadi sebuah kata``]
+                let kuisdesk = [`Game Dimana berusaha menebak jawaban terbanyak berdasarkan survey 100 orang`,`Game kombinasi beberapa gambar yang apabila dirangkai dapat menjadi sebuah kata`]
                 let kuistitle = [`Family100 Game`,`Tebak Gambar`]
                 let startnum = 0 ; let startnumm = 0
                     for (let x of kuispref) {
@@ -537,7 +494,7 @@ module.exports = async(xinz, msg, smsg, blocked, _afk, welcome) => {
             if (anjuy.length < 1){
                 let list = []
                 let kuispref = [`family100`,`tebakgambar`]
-                let kuisdesk = [`Game Dimana berusaha menebak jawaban terbanyak berdasarkan survey 100 orang`,`Game kombinasi beberapa gambar yang apabila dirangkai dapat menjadi sebuah kata``]
+                let kuisdesk = [`Game Dimana berusaha menebak jawaban terbanyak berdasarkan survey 100 orang`,`Game kombinasi beberapa gambar yang apabila dirangkai dapat menjadi sebuah kata`]
                 let kuistitle = [`Family100 Game`,`Tebak Gambar`]
                 let startnum = 0 ; let startnumm = 0
                     for (let x of kuispref) {
@@ -673,7 +630,7 @@ module.exports = async(xinz, msg, smsg, blocked, _afk, welcome) => {
                     },
                     "type": "RESPONSE"
                     }]
-                    xinz.sendButtonsLoc(from, ind.menu(prefix, ucap, pushname, jumlahUser, runtime(process.uptime()), ownerNumber[0].split("@")[0], , jumlahHarian, jumlahCommand, sender, time, `*${b.toUpperCase()}*`, levelMenu, xpMenu, reqXp, uangku, role, Limitnya), `Pilih menu dibawah!`, qqppp, await getBuffer(pic), [sender, "0@s.whatsapp.net"]).then((res) =>{
+                    xinz.sendButtonsLoc(from, ind.menu(prefix, ucap, pushname, jumlahUser, runtime(process.uptime()), ownerNumber[0].split("@")[0], jumlahHarian, jumlahCommand, sender, time, `*${b.toUpperCase()}*`, levelMenu, xpMenu, reqXp, uangku, role, Limitnya), `Pilih menu dibawah!`, qqppp, await getBuffer(pic), [sender, "0@s.whatsapp.net"]).then((res) =>{
                     let list = []
                     let listmenu = [`groupmenu`,`menupremi`,`textmenu`,`imagemaker`,`kerangmenu`,`praymenu`,`ownermenu`,`funmenu`,`mediamenu`,`weebsmenu`,`downloader`,`stickermenu`,`primbonmenu`,`levelingmenu`,`about`,`18`,`owner`,`sewabot`]
                     let listmenuu = [`Menu Group`,`Premium Menu`,`TextMaker`,`Image Effect`,`Kerang Menu`,`PrayMenu`,`Owner Command`,`Fun Features`,`Misc and Media`,`Weebs Zone`,`Downloader`,`Sticker Editing`,`Primbon`,`Leveling Xp and Balance`,`About Bot`,`Nsfw Command`,`OwnerBot`,`Rent this Bot`]
@@ -1025,7 +982,7 @@ module.exports = async(xinz, msg, smsg, blocked, _afk, welcome) => {
                     break
             case prefix+'genshininfo':
                 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
-                if (args.length < 2) return reply(`Kirim perintah *${command} nama*`)p
+                if (args.length < 2) return reply(`Kirim perintah *${command} nama*`)
                 fetchJson(`https://api.lolhuman.xyz/api/genshin/${q}?apikey=${lolkey}`)
                     .then((res) =>{
                     let ini_txt = `Name : ${res.result.title}\n`
@@ -4472,27 +4429,6 @@ _Harap tunggu sebentar, media akan segera dikirim_`
                 reply(`Penggunaan :\n*${prefix}premium* add/del @tag waktu\natau *${prefix}premium* add/del nomor waktu`)
                 }
                 break
-            case prefix+'addcmd': case prefix+'setcmd':{
-                if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}uptopremium* untuk membeli premium`)
-                  if (isQuotedSticker) {
-                  if (!q) return reply(`Penggunaan : ${command} cmdnya dan tag stickernya`)
-                  var kodenya = quotedMsg.stickerMessage.fileSha256.toString('hex')
-                  addCmd(kodenya, q)
-                  textImg("Done Bwang")
-                  } else {
-                    reply('tag stickenya')
-                  }
-                 }
-                 break
-            case prefix+'delcmd':{
-                if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}uptopremium* untuk membeli premium`)
-                if (!isQuotedSticker) return reply(`Penggunaan : ${command} tagsticker`)
-                  var kodenya = quotedMsg.stickerMessage.fileSha256.toString('hex')
-                _scommand.splice(getCommandPosition(kodenya), 1)
-                fs.writeFileSync('./database/scommand.json', JSON.stringify(_scommand))
-                  textImg("Done Bwang")
-                }
-                break
             case prefix+'premiumcheck':
             case prefix+'cekpremium':
                 if (!isPremium) return reply(`Kamu bukan user premium, kirim perintah *${prefix}uptopremium* untuk membeli premium`)
@@ -5352,7 +5288,8 @@ _Harap tunggu sebentar, media akan segera dikirim_`
                 break
             default:
             if (isCmd) {
-                textImg(ind.cmdNotFound(command ,prefix)
+                textImg(ind.cmdNotFound(command ,prefix))
+            }
         }
     } catch (err) {
         console.log(color('[ERROR]', 'red'), err)
