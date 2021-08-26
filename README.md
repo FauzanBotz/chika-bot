@@ -64,13 +64,7 @@ node main
 ```
 ## For Termux
 ```bash
-termux-setup-storage
-pkg update && pkg upgrade
-pkg install nodejs git ffmpeg imagemagick
-git clone https://github.com/rashidsiregar28/chika-bot.git
-cd chika-bot
-npm install
-node main
+sorry, this repo doesn't support termux :(
 ```
 
 ## For VPS
