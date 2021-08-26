@@ -108,6 +108,7 @@ Jika berhasil, akan memberikanmu pesan seperti: `SUCCESS: specified value was sa
 
 ## Donate
 - [Saweria](https://saweria.co/rashidsiregar28)
+- [Paypal](https://www.paypal.com/paypalme/rashidsiregar28)
 
 # Official Group
 - [Official Group 1](https://chat.whatsapp.com/HLU6B1Mw34QBMUoXAyhec0)
