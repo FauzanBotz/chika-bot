@@ -63,7 +63,7 @@ npm install
 node main
 ```
 ## For Termux
->sorry, this repo doesn't support termux :(
+- sorry, this repo doesn't support termux :(
 >[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rashidsiregar28/chika-bot)
 >
 
