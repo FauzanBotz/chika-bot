@@ -8,12 +8,13 @@ const fs = require("fs");
 const { color, XinzLog } = require("./lib/color");
 const { serialize, serializeM } = require("./lib/myfunc");
 const myfunc = require("./lib/myfunc");
-const afk = require("./lib/afk");
+
 
 let WAConnection = myfunc.WAConnection(_WAConnection)
 
 let welcome = JSON.parse(fs.readFileSync('./database/welcome.json'));
 let setting = JSON.parse(fs.readFileSync('./config.json'));
+let _afk = JSON.parse(fs.readFileSync('./database/afk.json'));
 let blocked = [];
 
 global.xinz = new WAConnection()
@@ -44,7 +45,6 @@ const start = async(sesion) => {
 
     fs.existsSync(sesion) && xinz.loadAuthInfo(sesion)
 
-    // Mencoba menghubungkan
     xinz.on('connecting', () => {
 		console.log(XinzLog('Connecting...'))
 	})
