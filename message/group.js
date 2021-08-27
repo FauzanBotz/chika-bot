@@ -15,7 +15,7 @@ module.exports = async(xinz, anj, welcome) => {
     const isWelcome = welcome.includes(anj.jid)
     const mdata = await xinz.groupMetadata(anj.jid)
     const groupName = mdata.subject
-    const conts = xinz.contacts[anj.participants[0]] || { notify: jid.replace(/@.+/, '') }
+    const conts = xinz.contacts[anj.participants[0]] || { notify: anj.jid.replace(/@.+/, '') }
 	const pushname = conts.notify || conts.vname || conts.name || PhoneNumber('+' + anj.participants[0].replace('@s.whatsapp.net', '')).getNumber('international')
     if (anj.action === 'add'){
         if (anj.participants[0] === xinz.user.jid){
