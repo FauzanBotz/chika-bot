@@ -2,7 +2,7 @@
   "ownerNumber": [ "6285219416361@s.whatsapp.net" ],
   "limitCount": 20,
   "gamewaktu": 60,
-  "botName": "ChikaBot",
+  "botName": "FauzanBot",
   "pathImg": "./media/yo.jpg",
   "lolkey": "APIKEY",
   "zekskey": "chika-key",
@@ -14,6 +14,6 @@
     "prem": 999999,
     "user": 25
   },
-  "packSticker": "By ChikaBot😍😍",
+  "packSticker": "By FauzanBot😍😍",
   "authorSticker": "Jangan Lupa Donasi Yak😅"
 }
