@@ -4,10 +4,10 @@
 
 </p>
 <p align="center">
-<a href="#"><img title="CHIKA BOT" src="https://img.shields.io/badge/CHIKA BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="CHIKA BOT MD" src="https://img.shields.io/badge/CHIKA BOT MD-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/rashidsiregar28/chika-bot"><img title="Author" src="https://img.shields.io/badge/Author-rashidsiregar28-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/rashidsiregar28/chika-bot/tree/multi"><img title="Author" src="https://img.shields.io/badge/Author-rashidsiregar28-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
 <a href="https://github.com/rashidsiregar28/chika-bot"><img title="Followers" src="https://img.shields.io/github/followers/rashidsiregar28?color=blue&style=flat-square"></a>
@@ -17,17 +17,17 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/rashidsiregar28/chika-bot#requirements">Requirements</a> •
-  <a href="https://github.com/rashidsiregar28/chika-bot#instalasi">Installation</a> •
-  <a href="https://github.com/rashidsiregar28/chika-bot#Thanks-to">Thanks to</a> •
-  <a href="https://github.com/rashidsiregar28/chika-bot#Official-Group"> Official Group Bot</a> •
-  <a href="https://github.com/rashidsiregar28/chika-bot#donate">Donate</a>
+  <a href="https://github.com/rashidsiregar28/chika-bot/tree/multi#requirements">Requirements</a> •
+  <a href="https://github.com/rashidsiregar28/chika-bot/tree/multi#instalasi">Installation</a> •
+  <a href="https://github.com/rashidsiregar28/chika-bot/tree/multi#Thanks-to">Thanks to</a> •
+  <a href="https://github.com/rashidsiregar28/chika-bot/tree/multi#Official-Group"> Official Group Bot</a> •
+  <a href="https://github.com/rashidsiregar28/chika-bot/tree/multi#donate">Donate</a>
 
 <p align='center'>
    <a href="https://twitter.com/rashidsiregar28"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/twitter.png?raw=true"></a>&nbsp;&nbsp;
    <a href="https://instagram.com/rashidsiregar28"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/instagram.jpg?raw=true"></a>&nbsp;&nbsp;
    <a href="https://www.facebook.com/rashidsiregar28"><img height="30" src="https://github.com/TobyG74/TobyG74/blob/main/facebook.png?raw=true"></a>&nbsp;&nbsp;
-   <a href="https://wa.me/628127668234"><img height="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBc_3WgZjWOtqdKZQbdkxUl5A31GZ_YC35zQ&usqp=CAU"></a>
+   <a href="https://wa.me/628127668234?text=Hello"><img height="30" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBc_3WgZjWOtqdKZQbdkxUl5A31GZ_YC35zQ&usqp=CAU"></a>
 </P>
 </p>
 </div>
