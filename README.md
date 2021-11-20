@@ -105,8 +105,7 @@ Jika berhasil, akan memberikanmu pesan seperti: `SUCCESS: specified value was sa
 - [Paypal](https://www.paypal.com/paypalme/rashidsiregar28)
 
 # Official Group
-- [Official Group 1](https://chat.whatsapp.com/HLU6B1Mw34QBMUoXAyhec0)
-- [Official Group 2](https://chat.whatsapp.com/IwGkynIvQAk1J6wQVDLeFC)
+- [Official Group](https://chat.whatsapp.com/JeyL5h04lEFJVCMNHdzrVL)
 
 # Thanks to
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
