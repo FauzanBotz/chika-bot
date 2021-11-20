@@ -58,7 +58,7 @@
 git clone -b multi https://github.com/rashidsiregar28/chika-bot.git
 cd chika-bot
 npm install
-node main pm2 start main.js
+node main pm2 start index.js
 ```
 ## For Termux
 - sorry, this repo doesn't support termux :(
@@ -71,7 +71,7 @@ apt install nodejs git ffmpeg imagemagick
 git clone -b multi https://github.com/rashidsiregar28/chika-bot.git
 cd chika-bot
 npm install
-node main or pm2 start main.js
+node main or pm2 start index.js
 ```
 
 ## Edit file
