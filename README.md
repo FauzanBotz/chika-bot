@@ -40,7 +40,7 @@
 > ChikaBot ialah recode base dari [GuiGuiCdd](https://github.com/guiguicdd/wabase-md)
 > Jika kamu menemukan semacam bug, harap untuk dimaklumi sementara
 >
->
+>Untuk yang tidak multi device, harap gunakan [ini](https://github.com/rashidsiregar28/chika-bot)
 
 ## Bugs and Tester
 * Jika kamu menemukan bug jangan lupa buka Issues
