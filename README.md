@@ -19,7 +19,7 @@
 <p align="center">
   <a href="https://github.com/rashidsiregar28/chika-bot#requirements">Requirements</a> •
   <a href="https://github.com/rashidsiregar28/chika-bot#instalasi">Installation</a> •
-  <a href="https://github.com/rashidsiregar28/chika-bot#thanks-to">Thanks to</a> •
+  <a href="https://github.com/rashidsiregar28/chika-bot#Thanks-to">Thanks to</a> •
   <a href="https://github.com/rashidsiregar28/chika-bot#Official-Group"> Official Group Bot</a> •
   <a href="https://github.com/rashidsiregar28/chika-bot#donate">Donate</a>
 
@@ -37,7 +37,8 @@
 
 # Chika-Bot
 ## Information
-> ChikaBot ialah recode base dari [Xinz-bot](https://github.com/xinz-team/xinzBot)
+> ChikaBot ialah recode base dari [GuiGuiCdd](https://github.com/guiguicdd/wabase-md)
+> Jika kamu menemukan semacam bug, harap untuk dimaklumi sementara
 >
 >
 
@@ -50,14 +51,11 @@
 * [Node.js](https://nodejs.org/en/)
 * [Git](https://git-scm.com/downloads)
 * [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2020-12-08-13-03/ffmpeg-n4.3.1-26-gca55240b8c-win64-gpl-4.3.zip) (for sticker command)
-* Lolhuman Api, Regist on [this](https://api.lolhuman.xyz/register) and get a free APIKEY
-* Aqulz Api, Regist on [this](https://justaqul.xyz/auth/registration) and get a free APIKEY
-* [Image Magic](https://imagemagick.org/script/download.php) ( for nulis command, Centang Kolom 1,2,3,5,6)
 
 # Instalasi
 ## For Windows
 ```bash
-git clone https://github.com/rashidsiregar28/chika-bot.git
+git clone -b multi https://github.com/rashidsiregar28/chika-bot.git
 cd chika-bot
 npm install
 node main pm2 start main.js
@@ -70,7 +68,7 @@ node main pm2 start main.js
 ## For VPS
 ```bash
 apt install nodejs git ffmpeg imagemagick
-git clone https://github.com/rashidsiregar28/chika-bot.git
+git clone -b multi https://github.com/rashidsiregar28/chika-bot.git
 cd chika-bot
 npm install
 node main or pm2 start main.js
@@ -78,11 +76,11 @@ node main or pm2 start main.js
 
 ## Edit file
 - Change ownerNumber on [this section](https://github.com/rashidsiregar28/chika-bot/blob/4d8dc8692e97e2ca60deaa8dc77dab551abf6523/config.json#L2)
-- Change botName on [this section](https://github.com/rashidsiregar28/chika-bot/blob/4d8dc8692e97e2ca60deaa8dc77dab551abf6523/config.json#L5)
-- Change Apikey Lolhuman on [this section](https://github.com/rashidsiregar28/chika-bot/blob/4d8dc8692e97e2ca60deaa8dc77dab551abf6523/config.json#L7)
+- Change botName on [this section](https://github.com/rashidsiregar28/chika-bot/blob/4d8dc8692e97e2ca60deaa8dc77dab551abf6523/config.json#L3)
+- Change Pack and Author for Sticker on [this section](https://github.com/rashidsiregar28/chika-bot/blob/4d8dc8692e97e2ca60deaa8dc77dab551abf6523/config.json#L6)
 - Change Apikey Aqulz on [this section](https://github.com/rashidsiregar28/chika-bot/blob/4d8dc8692e97e2ca60deaa8dc77dab551abf6523/config.json#L10)
 - You can edit list and display menu or donate on [this section](https://github.com/rashidsiregar28/chika-bot/blob/main/help/ind.js)
-- You can add fiture on [this section](https://github.com/rashidsiregar28/chika-bot/blob/main/message/xinz.js)
+- You can add fiture on [this section](https://github.com/rashidsiregar28/chika-bot/blob/main/message/chika.js)
 
 
 ## Installing the FFmpeg for Windows
@@ -108,14 +106,8 @@ Jika berhasil, akan memberikanmu pesan seperti: `SUCCESS: specified value was sa
 - [Official Group](https://chat.whatsapp.com/JeyL5h04lEFJVCMNHdzrVL)
 
 # Thanks to
-* [`Baileys`](https://github.com/adiwajshing/Baileys)
-* [`Xinz-Team`](https://github.com/Xinz-Team)
-* [`Aqulzz`](https://github.com/zennn08)
-* [`Nurutomo`](https://github.com/Nurutomo)
-* [`Faiz Bastomi`](https://github.com/FaizBastomi)
-* [`MhankBarBar`](https://github.com/MhankBarBar)
-* [`MRHRTZ`](https://github.com/MRHRTZ)
-* [`Mamet`](https://github.com/mamet8/)
-* [`SlavyanDesu`](https://github.com/SlavyanDesu)
-* [`VideFrelan`](https://github.com/VideFrelan)
-* [`TobyG74`](https://github.com/TobyG74)
+<a href="https://github.com/adiwajshing"><img src="https://github.com/adiwajshing.png?size=100" width="100" height="100"></a> | [![FAJAR](http://github.com/xfar05.png?size=100)](http://github.com/xfar05)
+----|----
+[Adiwajshing](https://github.com/adiwajshing) | [Fabil](http://github.com/xfar05)
+Owner of Baileys | Owner of X-Far api
+
