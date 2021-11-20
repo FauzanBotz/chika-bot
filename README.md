@@ -61,8 +61,7 @@ npm install
 node main pm2 start index.js
 ```
 ## For Termux
-- sorry, this repo doesn't support termux :(
->[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rashidsiregar28/chika-bot)
+- I am sorry, this repo doesn't support termux :(
 >
 
 ## For VPS
