@@ -26,8 +26,8 @@ module.exports = async(chika, msg, m) => {
         const time = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('DD/MM/YY HH:mm:ss z')
         const ucap = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('a')
         const fromMe = msg.key.fromMe
-		const from = msg.key.remoteJid
-		const type = Object.keys(msg.message)[0]
+        const from = msg.key.remoteJid
+	const type = Object.keys(msg.message)[0]
         const content = JSON.stringify(msg.message)
         const chats = (type === 'conversation' && msg.message.conversation) ? msg.message.conversation : (type == 'imageMessage') && msg.message.imageMessage.caption ? msg.message.imageMessage.caption : (type == 'documentMessage') && msg.message.documentMessage.caption ? msg.message.documentMessage.caption : (type == 'videoMessage') && msg.message.videoMessage.caption ? msg.message.videoMessage.caption : (type == 'extendedTextMessage') && msg.message.extendedTextMessage.text ? msg.message.extendedTextMessage.text : ""
         if (chika.multi){
@@ -39,8 +39,8 @@ module.exports = async(chika, msg, m) => {
                 prefix = chika.prefa
             }
         }
-		const args = chats.split(' ')
-		const command = chats.toLowerCase().split(' ')[0] || ''
+	const args = chats.split(' ')
+	const command = chats.toLowerCase().split(' ')[0] || ''
         const isGroup = msg.key.remoteJid.endsWith('@g.us')
         const sender = isGroup ? msg.participant : msg.key.remoteJid
         const pushname = msg.pushName
@@ -49,16 +49,16 @@ module.exports = async(chika, msg, m) => {
         const body = chats.startsWith(prefix) ? chats : ''
         const botNumber = chika.user.id.split(':')[0] + '@s.whatsapp.net'
         const groupMetadata = isGroup ? await chika.groupMetadata(from) : ''
-		const groupName = isGroup ? groupMetadata.subject : ''
-		const groupId = isGroup ? groupMetadata.id : ''
-		const groupMembers = isGroup ? groupMetadata.participants : ''
-		const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
-		const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
-		const isGroupAdmins = groupAdmins.includes(sender) || false
+	const groupName = isGroup ? groupMetadata.subject : ''
+	const groupId = isGroup ? groupMetadata.id : ''
+	const groupMembers = isGroup ? groupMetadata.participants : ''
+	const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
+	const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
+	const isGroupAdmins = groupAdmins.includes(sender) || false
         const isOwner = ownerNumber.includes(sender)
 
-		const isUrl = (uri) => {
-			return uri.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%.+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%+.~#?&/=]*)/, 'gi'))
+	const isUrl = (uri) => {
+	    return uri.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%.+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%+.~#?&/=]*)/, 'gi'))
 		}
         const jsonformat = (json) => {
             return JSON.stringify(json, null, 2)
@@ -151,7 +151,7 @@ module.exports = async(chika, msg, m) => {
             }
         }
 
-		switch (command) {
+	switch (command) {
             case prefix+'rule': case prefix+'rules':
                 textImg(ind.rules(prefix))
             break
