@@ -164,7 +164,7 @@ module.exports = async(chika, msg, m) => {
                 }
             break
             case prefix+'menu': {
-                textImg(from, `Hai kak ${pushname}, saya ChikaBot\n\nBot ini adalah Beta Multi-Device Whatsapp, Bot ini juga example base untuk menggunakan api xfarr. Ketik ${prefix}allmenu untuk liat list menu`)
+                textImg(`Hai kak ${pushname}, saya ChikaBot\n\nBot ini adalah Beta Multi-Device Whatsapp, Bot ini juga example base untuk menggunakan api xfarr. Ketik ${prefix}allmenu untuk liat list menu`)
             }
             break
             case prefix+'allmenu': {
@@ -201,7 +201,7 @@ module.exports = async(chika, msg, m) => {
 ├ ${prefix}instagram link
 └──────
                 
-🙏Thanks For
+🙏*THANKS FOR*
 ├ xfarr-Api (https://github.com/xfar05/xfarr-api)
 └──────
 
