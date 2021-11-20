@@ -26,6 +26,7 @@ xinz.baterai = {
 xinz.multi = true
 xinz.nopref = false
 xinz.prefa = 'anjing'
+xinz.version = [3, 3234, 9]
 
 const start = async(sesion) => {
     xinz.logger.level = 'warn'
