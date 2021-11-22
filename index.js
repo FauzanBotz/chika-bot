@@ -1,2 +1,86 @@
-//ya maap ehe
-'use strict';const _0x1b67f6=_0x525c;(function(_0x36892b,_0x528bf2){const _0x47424a=_0x525c,_0x44077d=_0x36892b();while(!![]){try{const _0x32ba5d=parseInt(_0x47424a(0xf9))/0x1*(-parseInt(_0x47424a(0x10e))/0x2)+-parseInt(_0x47424a(0xea))/0x3+-parseInt(_0x47424a(0x105))/0x4+parseInt(_0x47424a(0xfb))/0x5+parseInt(_0x47424a(0x101))/0x6+parseInt(_0x47424a(0xeb))/0x7+parseInt(_0x47424a(0x106))/0x8*(parseInt(_0x47424a(0xf6))/0x9);if(_0x32ba5d===_0x528bf2)break;else _0x44077d['push'](_0x44077d['shift']());}catch(_0x39c4d8){_0x44077d['push'](_0x44077d['shift']());}}}(_0x4981,0x1fe71));const {default:makeWASocket,BufferJSON,initInMemoryKeyStore,DisconnectReason,AnyMessageContent,delay,useSingleFileAuthState}=require(_0x1b67f6(0x10b)),figlet=require('figlet'),fs=require('fs'),P=require(_0x1b67f6(0xf4)),{Boom}=require(_0x1b67f6(0x103)),{color,ChikaLog}=require(_0x1b67f6(0x10a));let setting=JSON[_0x1b67f6(0xef)](fs[_0x1b67f6(0xee)](_0x1b67f6(0xfc))),sesion='./'+setting['sessionName']+_0x1b67f6(0xf5);const {state,saveState}=useSingleFileAuthState(sesion);require('./message/chika.js'),nocache(_0x1b67f6(0x110),_0x520c33=>console[_0x1b67f6(0xf8)](color('\x27'+_0x520c33+_0x1b67f6(0x104))));const start=async()=>{const _0x22e8ff=_0x1b67f6;console[_0x22e8ff(0xf8)](color(figlet[_0x22e8ff(0xe5)](_0x22e8ff(0x108),{'font':'Standard','horizontalLayout':_0x22e8ff(0xfa),'vertivalLayout':_0x22e8ff(0xfa),'whitespaceBreak':![]}),_0x22e8ff(0x112))),console[_0x22e8ff(0xf8)](color(_0x22e8ff(0xf2)));const _0x5590a2=makeWASocket({'printQRInTerminal':!![],'logger':P({'level':_0x22e8ff(0xf3)}),'browser':[setting['botName']+_0x22e8ff(0xe4)],'auth':state});return console[_0x22e8ff(0xf8)](color('Connected....')),_0x5590a2[_0x22e8ff(0xf1)]=!![],_0x5590a2[_0x22e8ff(0xed)]=![],_0x5590a2[_0x22e8ff(0xfd)]=_0x22e8ff(0x107),_0x5590a2['mode']='public',_0x5590a2['ev']['on']('messages.upsert',async _0x468ff9=>{const _0x199e22=_0x22e8ff;if(!_0x468ff9['messages'])return;if(_0x468ff9[_0x199e22(0xe7)]!==_0x199e22(0xec))return;const _0x535945=_0x468ff9['messages'][0x0];require(_0x199e22(0x110))(_0x5590a2,_0x535945,_0x468ff9);}),_0x5590a2['ev']['on']('connection.update',_0x14234d=>{const _0x1701e3=_0x22e8ff,{connection:_0xc69c41,lastDisconnect:_0x11268a}=_0x14234d;if(_0xc69c41===_0x1701e3(0xf0)){console[_0x1701e3(0xf8)](ChikaLog(_0x1701e3(0x102))),console[_0x1701e3(0xf8)](ChikaLog('Mencoba\x20Menghubungkan\x20ulang...'));let _0x3f6f1e=_0x11268a['error']?.[_0x1701e3(0xe6)]?.['statusCode'];if(_0x3f6f1e===DisconnectReason[_0x1701e3(0xff)])start();if(_0x3f6f1e===DisconnectReason[_0x1701e3(0xfe)])console[_0x1701e3(0xf8)](ChikaLog(_0x1701e3(0x109)));if(_0x3f6f1e===DisconnectReason[_0x1701e3(0x10f)])start();if(_0x3f6f1e===DisconnectReason['loggedOut'])console[_0x1701e3(0xf8)](ChikaLog(_0x1701e3(0xe9)+sesion+'\x20and\x20scan\x20again'));if(_0x3f6f1e===DisconnectReason[_0x1701e3(0xf7)])console['log'](ChikaLog('Session\x20tidak\x20valid,\x20please\x20delete\x20'+sesion+_0x1701e3(0x10c)));if(_0x3f6f1e===DisconnectReason[_0x1701e3(0x10d)])start();}}),_0x5590a2['ev']['on'](_0x22e8ff(0x111),()=>saveState),_0x5590a2;};function nocache(_0xf2d6ff,_0x15db62=()=>{}){const _0x2bdd04=_0x1b67f6;console[_0x2bdd04(0xf8)](color(_0x2bdd04(0xe2)+_0xf2d6ff+'\x20Dipantau\x20oleh\x20oleh\x20sistem')),fs['watchFile'](require['resolve'](_0xf2d6ff),async()=>{const _0x326dc6=_0x2bdd04;await uncache(require[_0x326dc6(0x100)](_0xf2d6ff)),_0x15db62(_0xf2d6ff);});}function _0x525c(_0x31a79a,_0x13987a){const _0x498128=_0x4981();return _0x525c=function(_0x525c53,_0x1c9647){_0x525c53=_0x525c53-0xe2;let _0x678321=_0x498128[_0x525c53];return _0x678321;},_0x525c(_0x31a79a,_0x13987a);}function _0x4981(){const _0x242fd0=['nopref','readFileSync','parse','close','multi','[\x20By\x20Rashidsiregar28\x20]','fatal','pino','.json','9018XIeBxS','badSession','log','72099tTGuAj','default','847320hNmGCG','./config.json','prefa','connectionLost','connectionClosed','resolve','366966vInCcz','Koneksi\x20terputus....','@hapi/boom','\x27\x20Telah\x20berubah!','85972lSOjiT','472oXitzb','anjing','Chika\x20Bot\x20MD','koneksi\x20hilang...Sedang\x20mengoneksi\x20ulang','./lib/color','@adiwajshing/baileys-md','\x20and\x20scan\x20again','restartRequired','6FcgCVC','timedOut','./message/chika.js','creds.update','cyan','Module\x20','catch','\x20By\x20ChikaBot-MD','textSync','output','type','cache','Session\x20logout,\x20please\x20delete\x20','494910QYLCqQ','1705830JCMSBw','notify'];_0x4981=function(){return _0x242fd0;};return _0x4981();}function uncache(_0x25379d='.'){return new Promise((_0x1e72d5,_0x4b6b70)=>{const _0x722a44=_0x525c;try{delete require[_0x722a44(0xe8)][require['resolve'](_0x25379d)],_0x1e72d5();}catch(_0x409d68){_0x4b6b70(_0x409d68);}});}start()[_0x1b67f6(0xe3)](_0x4bba64=>console[_0x1b67f6(0xf8)](_0x4bba64));
+//mau ngapaen bang? kaget ya bisa di deoubfuscate?
+//DEOUBFUSCATE By NaufalCream
+const {
+    default: makeWASocket,
+    BufferJSON,
+    initInMemoryKeyStore,
+    DisconnectReason,
+    AnyMessageContent,
+    delay,
+    useSingleFileAuthState
+} = require('@adiwajshing/baileys-md')
+const figlet = require('figlet')
+const fs = require('fs')
+const P = require('pino')
+const { Boom } = require('@hapi/boom')
+const { color, ChikaLog } = require('./lib/color');
+let setting = JSON['parse'](fs.readFileSync('./config.json'))
+let sesion = './' + setting['sessionName'] + '.json';
+const { state, saveState } = useSingleFileAuthState(sesion);
+
+require('./message/chika.js')
+nocache('./message/chika.js', module => console.log(color("'" + module + "' Telah berubah!")));
+
+const start = async () => {
+    console.log(color(figlet.textSync('Chika Bot MD', {'font': 'Standard', 'horizontalLayout': 'default', 'vertivalLayout': 'default', 'whitespaceBreak': ![]}), 'cyan'))
+    console.log(color('[ By Rashidsiregar28 ]'));
+
+    const client = makeWASocket({
+        'printQRInTerminal': !![],
+        'logger': P({
+            'level': 'fatal',
+        }),
+        'browser': [setting['botName'] + ' By ChikaBot-MD'],
+        'auth': state
+    });
+
+    console.log(color('Connected....'))
+
+    client['multi'] = !![]
+    client['nopref'] = ![]
+    client['prefa'] = 'anjing'
+
+    client.ev.on('messages.upsert', async m => {
+        if (!m['messages']) return;
+        if (m['type'] !== 'notify') return;
+        const msg = m['messages'][0];
+        require('./message/chika.js')(client, msg, m);
+    })
+
+    client.ev.on('connection.update', update => {
+        const { connection, lastDisconnect: error } = update;
+        if (connection === 'close') {
+            console.log(ChikaLog('Koneksi terputus....')), console.log(ChikaLog('Mencoba Menghubungkan ulang...'));
+            let reason = error?.output.?.statusCode;
+            if (reason === DisconnectReason['connectionClosed']) start();
+            if (reason === DisconnectReason['connectionLost']) console.log(ChikaLog('koneksi hilang...'));
+            if (reason === DisconnectReason['timedOut']) start();
+            if (reason === DisconnectReason['loggedOut']) console['log'](ChikaLog('Session logout, please delete ' + sesion + ' and scan again'));
+            if (reason === DisconnectReason['badSession']) console.log(ChikaLog('Session tidak valid, please delete ' + sesion + ' and scan again'));
+            if (reason === DisconnectReason['restartRequired']) start();
+        }
+    })
+
+    client.ev.on('creds.update', () => saveState);
+};
+
+function nocache(module, cb = () => {}) {
+    console.log('Module', `'${module}'`, 'is now being watched for changes')
+    fs.watchFile(require.resolve(module), async () => {
+        await uncache(require.resolve(module))
+        cb(module)
+    })
+}
+
+function uncache(module = '.') {
+    return new Promise((resolve, reject) => {
+        try {
+            delete require.cache[require.resolve(module)]
+            resolve()
+        } catch (e) {
+            reject(e)
+        }
+    })
+}
+
+start().catch(e => console.log(e));
