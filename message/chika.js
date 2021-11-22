@@ -29,9 +29,10 @@ module.exports = async(chika, msg, m) => {
         const from = msg.key.remoteJid
 	const type = Object.keys(msg.message)[0]
         const content = JSON.stringify(msg.message)
+        const isBaileys = (msg.key.id.startsWith('3EB0') && msg.key.id.length === 12) ? true : (msg.key.id.startsWith('BAE5') && msg.key.id.length === 16)
         const chats = (type === 'conversation' && msg.message.conversation) ? msg.message.conversation : (type == 'imageMessage') && msg.message.imageMessage.caption ? msg.message.imageMessage.caption : (type == 'documentMessage') && msg.message.documentMessage.caption ? msg.message.documentMessage.caption : (type == 'videoMessage') && msg.message.videoMessage.caption ? msg.message.videoMessage.caption : (type == 'extendedTextMessage') && msg.message.extendedTextMessage.text ? msg.message.extendedTextMessage.text : ""
         if (chika.multi){
-		    var prefix = /^[°•π÷×¶∆£¢€¥®™✓=|!?#%^&.,\/\\©^]/.test(chats) ? chats.match(/^[°•π÷×¶∆£¢€¥®™✓=|!?#%^&.,\/\\©^]/gi) : '#'
+	    var prefix = /^[°•π÷×¶∆£¢€¥®™✓=|!?#%^&.,\/\\©^]/.test(chats) ? chats.match(/^[°•π÷×¶∆£¢€¥®™✓=|!?#%^&.,\/\\©^]/gi) : '#'
         } else {
             if (chika.nopref){
                 prefix = ''
@@ -57,6 +58,11 @@ module.exports = async(chika, msg, m) => {
 	const isGroupAdmins = groupAdmins.includes(sender) || false
         const isOwner = ownerNumber.includes(sender)
 
+        // Mode
+        if (chika.mode === 'self'){
+            if (!isOwner && !fromMe) return
+            if (fromMe && isBaileys) return
+        }
 	const isUrl = (uri) => {
 	    return uri.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%.+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%+.~#?&/=]*)/, 'gi'))
 		}
@@ -152,6 +158,17 @@ module.exports = async(chika, msg, m) => {
         }
 
 	switch (command) {
+            //Sistem
+            case prefix+'publik': case prefix+'public':
+                if (!isOwner && !fromMe) return reply(ind.ownerOnly())
+                chika.mode = 'public'
+                textImg(ind.doneOwner())
+            break
+            case prefix+'self':
+                if (!isOwner && !fromMe) return reply(mess.OnlyOwner)
+                chika.mode = 'self'
+                textImg(ind.doneOwner())
+            break
             case prefix+'rule': case prefix+'rules':
                 textImg(ind.rules(prefix))
             break
