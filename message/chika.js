@@ -30,7 +30,7 @@ module.exports = async(chika, msg, m) => {
 	const type = Object.keys(msg.message)[0]
         const content = JSON.stringify(msg.message)
         const isBaileys = (msg.key.id.startsWith('3EB0') && msg.key.id.length === 12) ? true : (msg.key.id.startsWith('BAE5') && msg.key.id.length === 16)
-        const chats = (type === 'conversation' && msg.message.conversation) ? msg.message.conversation : (type == 'imageMessage') && msg.message.imageMessage.caption ? msg.message.imageMessage.caption : (type == 'documentMessage') && msg.message.documentMessage.caption ? msg.message.documentMessage.caption : (type == 'videoMessage') && msg.message.videoMessage.caption ? msg.message.videoMessage.caption : (type == 'extendedTextMessage') && msg.message.extendedTextMessage.text ? msg.message.extendedTextMessage.text : ""
+        const chats = (type === 'conversation' && msg.message.conversation) ? msg.message.conversation : (type == 'imageMessage') && msg.message.imageMessage.caption ? msg.message.imageMessage.caption : (type == 'documentMessage') && msg.message.documentMessage.caption ? msg.message.documentMessage.caption : (type == 'videoMessage') && msg.message.videoMessage.caption ? msg.message.videoMessage.caption : (type == 'extendedTextMessage') && msg.message.extendedTextMessage.text ? msg.message.extendedTextMessage.text : (type == 'buttonsResponseMessage' && msg.message.buttonsResponseMessage.selectedButtonId) ? msg.message.buttonsResponseMessage.selectedButtonId : ""
         if (chika.multi){
 	    var prefix = /^[°•π÷×¶∆£¢€¥®™✓=|!?#%^&.,\/\\©^]/.test(chats) ? chats.match(/^[°•π÷×¶∆£¢€¥®™✓=|!?#%^&.,\/\\©^]/gi) : '#'
         } else {
@@ -121,6 +121,25 @@ module.exports = async(chika, msg, m) => {
             }
         }
         
+        const sendButton = (type, from, text, buttons, men, quoted, options) => { 
+        //options = buffer; (for media, for text = null)
+        //quoted: quotedmessage (but quoted not supported for locations buttons);
+        //kalo ga mau mentions, men isi dengan []
+        // kalo ga mau quoted, quoted isi dengan null
+            if (type == 'image') {
+                chika.sendMessage(from, { caption: text, image: options ? options : fs.readFileSync(setting.pathImg), buttons: buttons, headerType: 'IMAGE', mentions: men }, {quoted: quoted})
+            } else if (type == 'video') {
+                if (options === undefined || options === null) return reply('illegal method, chat owner bot')
+                chika.sendMessage(from, { caption: text, video: options, buttons: buttons, headerType: 'VIDEO', mentions: men }, {quoted: quoted})
+            } else if (type == 'location') {
+                chika.sendMessage(from, { caption: text, location: { jpegThumbnail: options ? options : fs.readFileSync(setting.pathImg) }, buttons: buttons, headerType: 'LOCATION', mentions: men })
+            } else if (type == 'text') {
+                chika.sendMessage(from, { text: text, buttons: buttons, headerType: 'TEXT', mentions: men }, {quoted: quoted})
+            } else {
+                reply('invalid type, please contact the owner bot')
+            }
+        }
+
         const _0x483176=_0x3dc2;function _0x3fcc(){const _0x1635e4=['1872647kvlITQ','1412458kynqMz','stickerMessage','message','1172799JXjaML','imageMessage','12XZxYdh','68BHkagy','8qylHdg','undefined','writeFileSync','1CxkcSE','2890720AosDed','10600458WErmEd','concat','2633920ijGMiI','quotedMessage','extendedTextMessage','audio','audioMessage','image','175533IqiEDt','from'];_0x3fcc=function(){return _0x1635e4;};return _0x3fcc();}function _0x3dc2(_0x26292f,_0x13bdaa){const _0x3fcc96=_0x3fcc();return _0x3dc2=function(_0x3dc26a,_0x85631){_0x3dc26a=_0x3dc26a-0x1af;let _0x11112d=_0x3fcc96[_0x3dc26a];return _0x11112d;},_0x3dc2(_0x26292f,_0x13bdaa);}(function(_0x431973,_0x5ac35c){const _0x1b26cc=_0x3dc2,_0x394e9d=_0x431973();while(!![]){try{const _0x4261de=parseInt(_0x1b26cc(0x1bc))/0x1*(-parseInt(_0x1b26cc(0x1b2))/0x2)+parseInt(_0x1b26cc(0x1af))/0x3*(parseInt(_0x1b26cc(0x1b8))/0x4)+parseInt(_0x1b26cc(0x1bd))/0x5+parseInt(_0x1b26cc(0x1b7))/0x6*(parseInt(_0x1b26cc(0x1b1))/0x7)+-parseInt(_0x1b26cc(0x1b9))/0x8*(parseInt(_0x1b26cc(0x1b5))/0x9)+parseInt(_0x1b26cc(0x1c0))/0xa+-parseInt(_0x1b26cc(0x1be))/0xb;if(_0x4261de===_0x5ac35c)break;else _0x394e9d['push'](_0x394e9d['shift']());}catch(_0x5a3ecd){_0x394e9d['push'](_0x394e9d['shift']());}}}(_0x3fcc,0x8b6a7));const downloadAndSaveMediaMessage=async(_0x489458,_0x5d9c5b=_0x483176(0x1ba))=>{return new Promise(async(_0x42e4c0,_0x51263a)=>{const _0x21b133=_0x3dc2;let _0x54a42a;if(_0x489458==_0x21b133(0x1c5))_0x54a42a=_0x21b133(0x1b6);if(_0x489458==_0x21b133(0x1c3))_0x54a42a=_0x21b133(0x1c4);if(_0x489458=='video')_0x54a42a='videoMessage';if(_0x489458=='sticker')_0x54a42a=_0x21b133(0x1b3);let _0x428645;if(msg[_0x21b133(0x1b4)][_0x21b133(0x1c2)]==null)_0x428645=await downloadContentFromMessage(msg['message'][_0x54a42a],_0x489458);else _0x428645=await downloadContentFromMessage(msg[_0x21b133(0x1b4)][_0x21b133(0x1c2)]['contextInfo'][_0x21b133(0x1c1)][_0x54a42a],_0x489458);let _0x192481=Buffer[_0x21b133(0x1b0)]([]);for await(const _0x16ebca of _0x428645){_0x192481=Buffer[_0x21b133(0x1bf)]([_0x192481,_0x16ebca]);}fs[_0x21b133(0x1bb)](_0x5d9c5b,_0x192481),_0x42e4c0(_0x5d9c5b);});};
 
         if (isCmd && !isGroup) {
@@ -153,7 +172,7 @@ module.exports = async(chika, msg, m) => {
                 exec(chats.slice(2), (err, stdout) => {
 					if (err) return textImg(`${err}`)
 					if (stdout) textImg(`${stdout}`)
-				})
+		})
             }
         }
 
@@ -181,7 +200,12 @@ module.exports = async(chika, msg, m) => {
                 }
             break
             case prefix+'menu': {
-                textImg(`Hai kak ${pushname} 👋, saya *ChikaBot*\n\nBot ini adalah Beta Multi-Device Whatsapp, Bot ini juga example base untuk menggunakan xfarr-api. Ketik *${prefix}allmenu* untuk liat list menu\n\nUntuk melihat script bot ini, buka https://github.com/rashidsiregar28/chika-bot/tree/multi`)
+                let txt = `Hai kak @${sender.split('@')[0]} 👋, saya *ChikaBot*\n\nBot ini adalah Beta Multi-Device Whatsapp, Bot ini juga example base untuk menggunakan xfarr-api.\n\nUntuk melihat script bot ini, buka https://github.com/rashidsiregar28/chika-bot/tree/multi`
+                let buttons = [
+                    {buttonId: `${prefix}allmenu`, buttonText: {displayText: '🔍 List Menu'}, type: 1},
+                    {buttonId: `${prefix}owner`, buttonText: {displayText: '🧑 Owner'}, type: 1}  
+                ]
+                sendButton('location', from, txt, buttons, [sender], null, fs.readFileSync(setting.pathImg))
             }
             break
             case prefix+'allmenu': {
