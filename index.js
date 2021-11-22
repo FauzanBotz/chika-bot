@@ -22,11 +22,11 @@ require('./message/chika.js')
 nocache('./message/chika.js', module => console.log(color("'" + module + "' Telah berubah!")));
 
 const start = async () => {
-    console.log(color(figlet.textSync('Chika Bot MD', {'font': 'Standard', 'horizontalLayout': 'default', 'vertivalLayout': 'default', 'whitespaceBreak': ![]}), 'cyan'))
+    console.log(color(figlet.textSync('Chika Bot MD', {'font': 'Standard', 'horizontalLayout': 'default', 'vertivalLayout': 'default', 'whitespaceBreak': false}), 'cyan'))
     console.log(color('[ By Rashidsiregar28 ]'));
 
     const client = makeWASocket({
-        'printQRInTerminal': !![],
+        'printQRInTerminal': true,
         'logger': P({
             'level': 'fatal',
         }),
@@ -36,8 +36,8 @@ const start = async () => {
 
     console.log(color('Connected....'))
 
-    client['multi'] = !![]
-    client['nopref'] = ![]
+    client['multi'] = true
+    client['nopref'] = false
     client['prefa'] = 'anjing'
 
     client.ev.on('messages.upsert', async m => {
