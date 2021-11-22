@@ -1,5 +1,5 @@
-//mau ngapaen bang? kaget ya bisa di deoubfuscate?
-//DEOUBFUSCATE By NaufalCream
+//mau ngapaen bang? kaget ya bisa di deobfuscate?
+//DEOBFUSCATE By NaufalCream
 const {
     default: makeWASocket,
     BufferJSON,
